@@ -313,3 +313,7 @@ a {
   border-radius: 5px;
   padding: 3px;
 }
+#div6 a:hover {
+  color: white;
+  text-decoration: none;
+}
