@@ -317,3 +317,12 @@ a {
   color: white;
   text-decoration: none;
 }
+@media (max-width 640px) {
+  body {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
