@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abdul lateef</title>
-    <link rel="stylesheet" href="index.css" />
+    <title>blog</title>
+    <link rel="stylesheet" href="blog.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -17,7 +17,9 @@
     <section class="body">
       <section class="main">
         <div class="sect">
-          <h2>~/A.B.D.L<b>|</b></h2>
+          <h1>
+            <a href="index.html">~/blog<b>|</b></a>
+          </h1>
           <ul>
             <li><a class="link" href="/index.html">Home</a></li>
             <li><a href="blog.html">Blog</a></li>
@@ -27,43 +29,24 @@
             <span class="theme"><i class="fa-regular fa-sun"></i></span>
           </ul>
         </div>
-        <article class="article">
-          <section class="secttwo">
-            <h1>Hi, I am <b>Abdul lateef</b></h1>
-            <p>
-              Welcome to My personal blog where I share my journey and ideas. I
-              am a Software Engineer with passion for Web Applications and
-              Machine Learning. In my free time, I like writing technical
-              articles and learning new technologies.
-            </p>
-            <p>
-              This is my domain, where i share my experience, ideologies and
-              research. Have a good read!
-            </p>
-          </section>
-          <section class="sect3">
-            <ul>
-              <li class="list">
-                <a href="">
-                  <i class="fa-solid fa-flask-vial"></i
-                  ><span>What I built </span>| projects</a
-                >
-              </li>
-              <li class="list">
-                <a href="">
-                  <i class="fa-solid fa-book-open"></i>
-                  <span> Read my story</span>| About</a
-                >
-              </li>
-            </ul>
-          </section>
-        </article>
+        <div id="div1">
+          <h2>All Posts</h2>
+        </div>
+        <div id="divone">
+          <input
+            type="search"
+            name="search"
+            id="search-bar"
+            placeholder="search articles"
+          />
+          <ul id="search-results"></ul>
+        </div>
+        <hr />
+
         <article class="home">
-          <h2>Latest</h2>
-          <hr />
           <div class="div">
             <a href="crafting.html">
-              <div id="div1">
+              <div id="div">
                 <h3>Crafting an HTTP Library in Rust</h3>
                 <ul>
                   <li>RUST</li>
@@ -117,35 +100,9 @@
             </a>
           </div>
         </article>
-        <div id="allpost">
-          <a href="blog.html"
-            >All Posts<i class="fa-solid fa-arrow-right-long"></i
-          ></a>
-        </div>
-        <div id="div6">
-          <h4>contact via</h4>
-          <ul>
-            <li>
-              <i class="fa-brands fa-instagram"></i>
-              <a
-                href="https://www.instagram.com/oyeniyi_lateef123?igsh=M2huNDljbnNoazlj&utm_source=qr"
-                >@oyeniyi_lateef123</a
-              >
-            </li>
-            <li>
-              <i class="fa-brands fa-linkedin"></i>
-              <a href="http://linkedin.com/in/abdul-lateef-oyeniyi-0b19692bb"
-                >@Abdul lateef oyeniyi</a
-              >
-            </li>
-            <li>
-              <i class="fa-brands fa-github"></i>
-              <a href="https://github.com/">@oyeabdullateef </a>
-            </li>
-          </ul>
-        </div>
       </section>
     </section>
-    <script src="script.js"></script>
+
+    <script src="blog.js"></script>
   </body>
 </html>

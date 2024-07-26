@@ -30,17 +30,25 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
-.sect h2 {
+.sect {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.sect h1 a {
+  text-decoration: none;
+}
+.sect h1 {
   font-size: 20px;
   font-weight: 500;
   margin-right: 280px;
 }
-
-.sect h2 b {
+.sect h1 a b {
   font-size: 20px;
   font-weight: 500;
 }
-.sect h2 b {
+
+.sect h1 a b {
   animation: fade-in-out 1s infinite;
 }
 @keyframes fade-in-out {
@@ -62,6 +70,7 @@
 }
 a {
   text-decoration-line: none;
+  color: black;
 }
 .main .sect li :hover {
   border: 3px;
@@ -74,12 +83,12 @@ a {
 .theme .fa-sun {
   width: 20px;
   height: 20px;
+  border-radius: 50%;
   border: 1px;
   border-style: solid;
-  border-radius: 50%;
-  background-color: #6b6b6b;
-  border-color: #6b6b6b;
   padding: 5px;
+  border-color: #6b6b6b;
+  background-color: #6b6b6b;
   margin-top: 0px;
   margin-left: 5px;
   font-size: 20px;
@@ -98,97 +107,58 @@ a {
 .dark a {
   color: white;
 }
-.article {
-  display: flex;
-  flex-direction: row;
+#div1 {
+  margin-left: 110px;
+  margin-top: 80px;
 }
-.secttwo {
-  display: flex;
-  flex-direction: column;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-.secttwo h1 {
+#div1 h2 {
   font-size: 60px;
-  margin-top: 100px;
+  font-weight: 1000;
 }
-.secttwo h1 b {
-  color: green;
-}
-.secttwo p {
-  width: 650px;
-  margin-top: 40px;
-}
-.sect3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 150px;
-}
-.sect3 ul li {
-  list-style: none;
-  margin-top: 30px;
-  border: 3px;
-  border-radius: 1px;
+#search-bar {
+  width: 50%;
   padding: 10px;
-}
-.sect3 ul li a i {
-  margin-right: 8px;
-}
-.sect3 ul li span {
-  margin-right: 10px;
-}
-
-.sect3 ul li:hover {
-  border: 3px;
-  border-style: ridge;
-  border-color: rgb(109, 109, 196);
+  font-size: 18px;
+  margin-left: 110px;
+  margin-top: 15px;
+  border: 1px;
   border-radius: 5px;
-  cursor: pointer;
+  border-style: ridge;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
-.light .sect3 ul li {
-  background-color: white;
-  color: black;
+#search-results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #0f0f0f;
+  border-radius: 5px;
+  box-shadow: 0 0 10px green;
 }
-.dark .sect3 ul li {
-  background-color: black;
-  color: white;
+#search-results li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
-
-.sect3 ul {
-  text-align: right;
-  justify-items: center;
-}
-
-.sect3 ul li a {
-  padding: 20px;
+hr {
+  margin-top: 35px;
+  margin-left: 110px;
+  margin-right: 70px;
+  font-weight: 900;
 }
 .home {
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 100px;
+  margin-left: 110px;
+  margin-top: 10px;
 }
-.home h2 {
-  margin-bottom: 20px;
-  font-size: 50px;
-}
-.home hr {
-  color: rgb(51, 50, 50);
-  font-weight: 2px;
-  font-size: 4px;
-}
-#div1 h3 {
-  margin-top: 30px;
+#div h3 {
+  margin-top: 20px;
   margin-bottom: 10px;
   font-size: 25px;
 }
-#div1 h3:hover {
+#div h3:hover {
   color: rgb(22, 99, 22);
   cursor: pointer;
 }
 
-#div1 ul {
+#div ul {
   display: flex;
   flex-direction: row;
   gap: 35px;
@@ -196,7 +166,7 @@ a {
   margin-bottom: 15px;
   margin-left: 10px;
 }
-#div1 ul li {
+#div ul li {
   list-style: none;
   font-size: 15px;
   color: rgb(22, 99, 22);
@@ -204,16 +174,16 @@ a {
   border-radius: 8px;
   border-style: ridge;
   border-color: rgb(22, 99, 22);
-  padding: 4px;
+  padding: 2px;
 }
-#div1 ul :hover {
+#div ul :hover {
   color: white;
   background-color: green;
   cursor: pointer;
 }
-#div1 p {
+#div p {
   font-size: medium;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 40px;
   color: rgb(77, 75, 75);
 }
@@ -222,8 +192,8 @@ a {
   border-radius: 10px;
   border-style: ridge;
   border-color: rgb(51, 50, 50);
-  background-color: rgb(231, 231, 231);
-  padding: 10px;
+  background-color: rgb(212, 205, 205);
+  padding: 5px;
   cursor: pointer;
 }
 
@@ -269,7 +239,7 @@ a {
   border-radius: 10px;
   border-style: ridge;
   border-color: rgb(51, 50, 50);
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(212, 205, 205);
   padding: 5px;
   cursor: pointer;
 }
@@ -314,110 +284,6 @@ a {
   border-radius: 10px;
   border-style: ridge;
   border-color: rgb(51, 50, 50);
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(212, 205, 205);
   padding: 5px;
-}
-#allpost {
-  text-align: right;
-  margin-right: 100px;
-  margin-top: 10px;
-  font-weight: 200;
-}
-#allpost a {
-  text-decoration: none;
-  color: rgb(22, 99, 22);
-  border: 1px;
-  border-bottom-color: rgb(22, 99, 22);
-  border-bottom-style: ridge;
-  padding: 4px;
-}
-.fa-arrow-right-long {
-  font-weight: 10;
-  font-size: smaller;
-  margin-top: 4px;
-  margin-left: 4px;
-}
-#allpost :hover {
-  background-color: rgb(22, 99, 22);
-  color: white;
-}
-
-#div6 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-#div6 h4 {
-  font-size: 25px;
-  margin-bottom: 20px;
-}
-#div6 ul {
-  display: flex;
-  align-items: first baseline;
-  gap: 70px;
-  list-style: none;
-  margin-bottom: 20px;
-}
-#div6 ul li:hover {
-  color: white;
-  background-color: green;
-  cursor: pointer;
-  border: 2px;
-  border-radius: 5px;
-  padding: 3px;
-}
-#div6 a:hover {
-  color: white;
-  text-decoration: none;
-}
-@media (max-width 640px) {
-  body {
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-}
-.fa-instagram {
-  color: #e1306c;
-  font-size: 24px;
-  cursor: pointer;
-}
-.fa-instagram:hover {
-  color: #c2266d;
-}
-.fa-linkedin {
-  color: #2867b2;
-  font-size: 24px;
-  cursor: pointer;
-}
-.fa-linkedin:hover {
-  color: #235272;
-}
-.fa-github {
-  color: #333;
-  font-size: 24px;
-  cursor: pointer;
-}
-.fa-github :hover {
-  color: #555;
-}
-.fa-flask-vial {
-  color: #4caf50;
-  font-size: 24px;
-  cursor: pointer;
-}
-.fa-flask-vial :hover {
-  color: #3e8e41;
-}
-.fa-book-open {
-  color: #3498db;
-  font-size: 24px;
-  cursor: pointer;
-}
-.fa-book-open :hover {
-  color: #2980b9;
 }
