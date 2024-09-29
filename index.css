@@ -425,11 +425,11 @@ a {
 
 @media (max-width: 600px) {
   .body {
-    height: 50vh;
-    padding-top: 10px;
+    height: 100vh;
+    padding-top: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
-    padding-left: 50px;
+    padding-left: 25px;
   }
   .light {
     background-color: white;
