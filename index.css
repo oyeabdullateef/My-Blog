@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
 }
@@ -19,7 +19,7 @@
   color: white; */
 }
 
-.main {
+/* .main {
   border: 1px;
   height: 100%;
   font-size: large;
@@ -373,8 +373,8 @@ a {
 #div6 a:hover {
   color: white;
   text-decoration: none;
-}
-@media (max-width 640px) {
+} */ */
+/* @media (max-width 640px) {
   body {
     flex-wrap: wrap;
     display: flex;
@@ -422,7 +422,7 @@ a {
 }
 .fa-book-open :hover {
   color: #2980b9;
-}
+} */
 
 @media (max-width: 640px) {
   .body{
