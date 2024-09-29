@@ -108,3 +108,22 @@ a {
 .dark a {
   color: white;
 }
+article {
+  margin-top: 40px;
+  margin-left: 250px;
+}
+h2 {
+  font-size: 50px;
+  font-weight: 900;
+}
+.link {
+  display: flex;
+  flex-direction: row;
+  font-size: 50px;
+  margin-top: 15px;
+  text-decoration: none;
+  color: black;
+}
+.link b {
+  color: #ccc;
+}
