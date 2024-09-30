@@ -1,0 +1,71 @@
+.sect3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+.sect3 ul li {
+  list-style: none;
+  margin-top: 30px;
+  border: 3px;
+  border-radius: 1px;
+  padding: 10px;
+}
+.sect3 ul li a i {
+  margin-right: 8px;
+}
+.sect3 ul li span {
+  margin-right: 10px;
+}
+
+.sect3 ul li:hover {
+  border: 3px;
+  border-style: ridge;
+  border-color: rgb(109, 109, 196);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.light .sect3 ul li {
+  background-color: white;
+  color: black;
+}
+.dark .sect3 ul li {
+  background-color: black;
+  color: white;
+}
+
+.sect3 ul {
+  text-align: right;
+  justify-items: center;
+}
+
+.sect3 ul li a {
+  padding: 20px;
+}
+.div :hover {
+  border: 0px;
+  border-radius: 10px;
+  border-style: ridge;
+  border-color: rgb(51, 50, 50);
+  background-color: rgb(231, 231, 231);
+  padding: 10px;
+  cursor: pointer;
+}
+#div2 :hover {
+  border: 0px;
+  border-radius: 10px;
+  border-style: ridge;
+  border-color: rgb(51, 50, 50);
+  background-color: rgb(231, 231, 231);
+  padding: 5px;
+  cursor: pointer;
+}
+#div4 :hover {
+  border: 0px;
+  border-radius: 10px;
+  border-style: ridge;
+  border-color: rgb(51, 50, 50);
+  background-color: rgb(231, 231, 231);
+  padding: 5px;
+}
