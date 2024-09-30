@@ -383,6 +383,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
   }
   .secttwo {
     padding-left: 20px;
@@ -403,6 +404,9 @@
     flex-direction: column; /* Stack items vertically */
     align-items: flex-start; /* Align items to the start */
   }
+  .sect3 ul li {
+    list-style: none;
+  }
 
   .sect3 .list {
     margin: 10px 0; /* Add vertical space between items */
@@ -421,7 +425,12 @@
   .home h2 {
     font-size: 40px;
   }
-
+  .div :hover {
+    border: 0px;
+    border-radius: 0px;
+    border-style: none;
+    padding: 0px;
+  }
   #div1 h3 {
     font-size: 20px;
     text-align: center;
