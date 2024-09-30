@@ -121,7 +121,7 @@ a {
   width: 650px;
   margin-top: 40px;
 }
-.sect3 {
+/* .sect3 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,7 +165,7 @@ a {
 
 .sect3 ul li a {
   padding: 20px;
-}
+} */
 .home {
   margin-left: 100px;
   margin-right: 100px;
