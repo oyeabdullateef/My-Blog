@@ -175,14 +175,17 @@ a {
   margin-bottom: 40px;
   color: rgb(77, 75, 75);
 }
-.div :hover {
-  border: 0px;
-  border-radius: 10px;
-  border-style: ridge;
-  border-color: rgb(51, 50, 50);
-  background-color: rgb(231, 231, 231);
-  padding: 10px;
-  cursor: pointer;
+
+@media (max-width: 1024px) {
+  .div:hover {
+    border: 0px;
+    border-radius: 10px;
+    border-style: ridge;
+    border-color: rgb(51, 50, 50);
+    background-color: rgb(231, 231, 231);
+    padding: 10px;
+    cursor: pointer;
+  }
 }
 
 #div3 h3 {
@@ -222,15 +225,18 @@ a {
   margin-bottom: 40px;
   color: rgb(77, 75, 75);
 }
-#div2 :hover {
-  border: 0px;
-  border-radius: 10px;
-  border-style: ridge;
-  border-color: rgb(51, 50, 50);
-  background-color: rgb(231, 231, 231);
-  padding: 5px;
-  cursor: pointer;
+@media (max-width: 1024px) {
+  #div2 :hover {
+    border: 0px;
+    border-radius: 10px;
+    border-style: ridge;
+    border-color: rgb(51, 50, 50);
+    background-color: rgb(231, 231, 231);
+    padding: 5px;
+    cursor: pointer;
+  }
 }
+
 #div5 h3 {
   margin-top: 30px;
   font-size: 25px;
@@ -267,14 +273,17 @@ a {
   margin-bottom: 40px;
   color: rgb(77, 75, 75);
 }
-#div4 :hover {
-  border: 0px;
-  border-radius: 10px;
-  border-style: ridge;
-  border-color: rgb(51, 50, 50);
-  background-color: rgb(231, 231, 231);
-  padding: 5px;
+@media (max-width: 1024px) {
+  #div4 :hover {
+    border: 0px;
+    border-radius: 10px;
+    border-style: ridge;
+    border-color: rgb(51, 50, 50);
+    background-color: rgb(231, 231, 231);
+    padding: 5px;
+  }
 }
+
 #allpost {
   text-align: right;
   margin-right: 100px;
@@ -371,6 +380,13 @@ a {
   .home h2 {
     margin-bottom: 20px;
     font-size: 24px; /* Reduce font size */
+  }
+  .div :hover {
+    border: 0px;
+    border-radius: 10px;
+    border-style: ridge;
+    border-color: rgb(51, 50, 50);
+    padding: 0px;
   }
 
   #div1,
