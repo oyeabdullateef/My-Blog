@@ -425,7 +425,19 @@
   .home h2 {
     font-size: 40px;
   }
-  .div :hover {
+  .div:hover {
+    border: 0px;
+    border-radius: 0px;
+    border-style: none;
+    padding: 0px;
+  }
+  #div2:hover {
+    border: 0px;
+    border-radius: 0px;
+    border-style: none;
+    padding: 0px;
+  }
+  #div4:hover {
     border: 0px;
     border-radius: 0px;
     border-style: none;
