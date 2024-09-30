@@ -439,4 +439,36 @@ a {
     flex-direction: column; /* Stack items */
     gap: 10px; /* Adjust gap */
   }
+  .sect3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sect3 ul li {
+    list-style: none;
+  }
+  .sect3 ul li a i {
+    margin-right: 0;
+  }
+  .sect3 ul li span {
+    margin-right: 0px;
+  }
+
+  .light .sect3 ul li {
+    background-color: white;
+    color: black;
+  }
+  .dark .sect3 ul li {
+    background-color: black;
+    color: white;
+  }
+
+  .sect3 ul {
+    text-align: right;
+    justify-items: center;
+  }
+
+  .sect3 ul li a {
+    padding: 0px;
+  }
 }
