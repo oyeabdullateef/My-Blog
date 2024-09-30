@@ -390,8 +390,8 @@ a {
   .sect {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    font-size: 10px;
+    gap: 20px;
+    font-size: 15px;
     font-weight: bold;
   }
 }
