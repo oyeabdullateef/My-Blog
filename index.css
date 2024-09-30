@@ -390,69 +390,61 @@
 }
 @media (max-width: 480px) {
   .body {
-    padding: 5px; /* Further reduced padding */
+    padding: 15px; /* Reduced padding for small screens */
+  }
+
+  .main {
+    font-size: small; /* Further reduce font size for readability */
   }
 
   .sect {
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column; /* Stacking sections vertically */
+    padding: 5px;
   }
 
   .sect h2 {
-    font-size: 14px; /* Further reduce font size */
+    font-size: 14px; /* Adjust font size for mobile */
+    margin-right: 0;
+    text-align: center;
   }
 
   .sect ul {
-    gap: 5px; /* Smaller gap for mobile */
+    gap: 8px; /* Smaller gap between list items */
+    font-size: 12px; /* Smaller font for list items */
   }
 
-  .secttwo h1 {
-    font-size: 24px; /* Reduce title font */
-    margin-top: 40px;
-  }
-
-  .secttwo p {
-    width: 100%; /* Full width text for mobile */
-    margin-top: 15px;
-  }
-
-  .home h2 {
-    font-size: 24px; /* Reduce heading font size */
-  }
-
-  #div1 ul,
-  #div3 ul,
-  #div5 ul,
-  #div6 ul {
-    flex-direction: column; /* Stack all list items vertically */
-  }
-
-  #div1 ul li,
-  #div3 ul li,
-  #div5 ul li,
-  #div6 ul li {
+  .sect ul li {
     padding: 5px; /* Smaller padding for list items */
   }
 
+  .sect h2 b {
+    font-size: 14px;
+  }
+
+  .main .sect li:hover {
+    padding: 2px; /* Adjust hover padding for mobile */
+  }
   .theme .fa-sun {
-    width: 16px;
+    width: 16px; /* Further reduce for mobile screens */
     height: 16px;
-    padding: 3px; /* Smaller sun icon for very small screens */
+    font-size: 16px;
+    padding: 3px;
   }
 
-  .sect3 {
-    margin-top: 50px; /* Reduce top margin for small screens */
-  }
-
-  .sect3 ul li {
-    padding: 6px; /* Smaller padding for mobile list items */
-    margin-top: 10px; /* Reduce margin between items */
-  }
-
-  .article {
-    flex-direction: column; /* Ensure articles stack properly */
-  }
-
+  /* Section two */
   .secttwo {
-    padding: 10px; /* Reduce padding inside sections */
+    padding-left: 10px; /* Even more reduced padding for very small screens */
+    padding-right: 10px;
+  }
+
+  .secttwo h1 {
+    font-size: 28px; /* Smaller header size */
+    margin-top: 30px;
+  }
+
+  .secttwo p {
+    font-size: 12px; /* Reduced font size */
+    margin-top: 15px;
+    width: 100%; /* Ensure the paragraph takes full screen width */
   }
 }
