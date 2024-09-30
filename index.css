@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1366px) {
+@media only screen and (min-width: 481px) and (max-width: 1366px) {
   * {
     margin: 0;
     padding: 0;
@@ -426,22 +426,19 @@
     font-size: 40px;
   }
   .div:hover {
-    border: 0px;
-    border-radius: 0px;
-    border-style: none;
-    padding: 0px;
+    border: none;
+    background-color: inherit;
+    cursor: default;
   }
   #div2:hover {
-    border: 0px;
-    border-radius: 0px;
-    border-style: none;
-    padding: 0px;
+    border: none;
+    background-color: inherit;
+    cursor: default;
   }
   #div4:hover {
-    border: 0px;
-    border-radius: 0px;
-    border-style: none;
-    padding: 0px;
+    border: none;
+    background-color: inherit;
+    cursor: default;
   }
   #div1 h3 {
     font-size: 20px;
