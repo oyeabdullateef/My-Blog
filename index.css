@@ -379,7 +379,11 @@
   .sect ul li {
     font-size: 14px;
   }
-
+  .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .secttwo {
     padding-left: 20px;
     padding-right: 20px;
@@ -391,7 +395,7 @@
   }
 
   .secttwo p {
-    width: 100%;
+    width: auto;
     margin-top: 20px;
     text-align: justify;
   }
