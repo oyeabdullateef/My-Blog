@@ -399,11 +399,13 @@ a {
 
   .secttwo h1 {
     font-size: 30px; /* Reduce font size */
-    margin-top: 40px; /* Adjust margin */
+    margin-top: 40px;
+    /* Adjust margin */
+    width: 100px;
   }
 
   .secttwo p {
-    width: auto; /* Allow text to wrap */
+    width: 100px; /* Allow text to wrap */
   }
 
   .home {
