@@ -329,7 +329,7 @@
     font-size: 30px;
     font-weight: bold;
     width: auto;
-    margin-left: 5px;
+    text-align: center;
   }
   .secttwo h1 b {
     color: green;
@@ -375,7 +375,7 @@
   .sect3 ul li a {
     text-decoration: none;
     color: white;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .sect3 ul li a:hover {
     color: green;
