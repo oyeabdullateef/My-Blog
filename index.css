@@ -331,26 +331,14 @@
     width: auto;
     text-align: center;
   }
+  .secttwo h1 b {
+    color: green;
+  }
   .secttwo p {
     width: auto;
     margin-top: 5px;
     font-size: medium;
     text-align: center;
-  }
-  .secttwo h1 b {
-    transform: translate(-20%, -20%);
-    -webkit-text-stroke: 1px white;
-    color: transparent;
-    background-color: green;
-    background-repeat: no-repeat;
-    -webkit-background-clip: text;
-    background-position: -900px 0;
-    animation: backcolor 5s linear infinite alternate;
-  }
-  @keyframes backcolor {
-    100% {
-      background-position: 0 0;
-    }
   }
   .sect3 {
     display: flex;
