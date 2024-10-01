@@ -1,530 +1,303 @@
-@media only screen and (min-width: 481px) and (max-width: 1366px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  .body {
-    height: 100vh;
-    padding-top: 40px;
-    padding-right: 100px;
-    padding-bottom: 40px;
-    padding-left: 100px;
-    color: white;
-  }
-  .light {
-    background-color: white;
-    color: black;
-  }
-  .dark {
-    background-color: black;
-    color: white;
-  }
-
-  .main {
-    border: 1px;
-    height: 100%;
-    font-size: large;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serifs;
-  }
-  .sect {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .sect h2 {
-    font-size: 20px;
-    font-weight: 500;
-    margin-right: 280px;
-  }
-  .light .sect h2 {
-    color: black;
-  }
-
-  .sect h2 b {
-    font-size: 20px;
-    font-weight: 500;
-  }
-  .sect h2 b {
-    animation: fade-in-out 1s infinite;
-  }
-  @keyframes fade-in-out {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  .sect ul {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    list-style: none;
-    font-size: 15px;
-  }
-  a {
-    text-decoration-line: none;
-  }
-  .main .sect li :hover {
-    border: 3px;
-    border-style: ridge;
-    border-color: rgb(46, 43, 43);
-    border-bottom-color: aqua;
-    border-radius: 5px;
-    padding: 3px;
-  }
-  .theme .fa-sun {
-    width: 20px;
-    height: 20px;
-    border: 1px;
-    border-style: solid;
-    border-radius: 50%;
-    background-color: #6b6b6b;
-    border-color: #6b6b6b;
-    padding: 5px;
-    margin-top: 0px;
-    margin-left: 5px;
-    font-size: 20px;
-  }
-  .light .theme .fa-sun {
-    color: black;
-    border-color: black;
-  }
-  .dark .theme .fa-sun {
-    color: white;
-    border-color: white;
-  }
-  .light a {
-    color: black;
-  }
-  .dark a {
-    color: white;
-  }
-  .article {
-    display: flex;
-    flex-direction: row;
-  }
-  .secttwo {
-    display: flex;
-    flex-direction: column;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-  .light .secttwo {
-    color: black;
-  }
-
-  .secttwo h1 {
-    font-size: 60px;
-    margin-top: 100px;
-  }
-  .secttwo h1 b {
-    color: green;
-  }
-  .secttwo p {
-    width: 650px;
-    margin-top: 40px;
-  }
-
-  .home {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 100px;
-  }
-  .home h2 {
-    margin-bottom: 20px;
-    font-size: 50px;
-  }
-  .light .home h2 {
-    color: black;
-  }
-
-  .home hr {
-    color: rgb(51, 50, 50);
-    font-weight: 2px;
-    font-size: 4px;
-  }
-  .div :hover {
-    border: 0px;
-    border-radius: 10px;
-    border-style: ridge;
-    border-color: rgb(51, 50, 50);
-    background-color: rgb(231, 231, 231);
-    padding: 10px;
-    cursor: pointer;
-  }
-  #div2 :hover {
-    border: 0px;
-    border-radius: 10px;
-    border-style: ridge;
-    border-color: rgb(51, 50, 50);
-    background-color: rgb(231, 231, 231);
-    padding: 5px;
-    cursor: pointer;
-  }
-  #div4 :hover {
-    border: 0px;
-    border-radius: 10px;
-    border-style: ridge;
-    border-color: rgb(51, 50, 50);
-    background-color: rgb(231, 231, 231);
-    padding: 5px;
-  }
-  #div1 h3 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-size: 25px;
-  }
-  #div1 h3:hover {
-    color: rgb(22, 99, 22);
-    cursor: pointer;
-  }
-
-  #div1 ul {
-    display: flex;
-    flex-direction: row;
-    gap: 35px;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    margin-left: 10px;
-  }
-  #div1 ul li {
-    list-style: none;
-    font-size: 15px;
-    color: rgb(22, 99, 22);
-    border: 1px;
-    border-radius: 8px;
-    border-style: ridge;
-    border-color: rgb(22, 99, 22);
-    padding: 4px;
-  }
-  #div1 ul :hover {
-    color: white;
-    background-color: green;
-    cursor: pointer;
-  }
-  #div1 p {
-    font-size: medium;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    color: rgb(77, 75, 75);
-  }
-
-  #div3 h3 {
-    margin-top: 40px;
-    font-size: 25px;
-    margin-bottom: 10px;
-  }
-  #div3 h3:hover {
-    color: rgb(22, 99, 22);
-    cursor: pointer;
-  }
-  #div3 ul {
-    display: flex;
-    flex-direction: row;
-    margin-top: 25px;
-    margin-bottom: 10px;
-    gap: 25px;
-  }
-  #div3 ul li {
-    list-style: none;
-    font-size: 15px;
-    color: rgb(22, 99, 22);
-    border: 1px;
-    border-radius: 8px;
-    border-style: ridge;
-    border-color: rgb(22, 99, 22);
-    padding: 4px;
-  }
-  #div3 ul :hover {
-    color: white;
-    background-color: green;
-    cursor: pointer;
-  }
-  #div3 p {
-    font-size: medium;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    color: rgb(77, 75, 75);
-  }
-
-  #div5 h3 {
-    margin-top: 30px;
-    font-size: 25px;
-    margin-bottom: 10px;
-  }
-  #div5 h3:hover {
-    color: rgb(22, 99, 22);
-  }
-  #div5 ul {
-    display: flex;
-    flex-direction: row;
-    margin-top: 25px;
-    margin-bottom: 10px;
-    gap: 25px;
-  }
-  #div5 ul li {
-    list-style: none;
-    font-size: 15px;
-    color: rgb(22, 99, 22);
-    border: 1px;
-    border-radius: 8px;
-    border-style: ridge;
-    border-color: rgb(22, 99, 22);
-    padding: 4px;
-  }
-  #div5 ul :hover {
-    color: white;
-    background-color: green;
-    cursor: pointer;
-  }
-  #div5 p {
-    font-size: medium;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    color: rgb(77, 75, 75);
-  }
-
-  #allpost {
-    text-align: right;
-    margin-right: 100px;
-    margin-top: 10px;
-    font-weight: 200;
-  }
-  #allpost a {
-    text-decoration: none;
-    color: rgb(22, 99, 22);
-    border: 1px;
-    border-bottom-color: rgb(22, 99, 22);
-    border-bottom-style: ridge;
-    padding: 4px;
-  }
-  .fa-arrow-right-long {
-    font-weight: 10;
-    font-size: smaller;
-    margin-top: 4px;
-    margin-left: 4px;
-  }
-  #allpost :hover {
-    background-color: rgb(22, 99, 22);
-    color: white;
-  }
-
-  #div6 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
-  #div6 h4 {
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
-  #div6 ul {
-    display: flex;
-    align-items: first baseline;
-    gap: 70px;
-    list-style: none;
-    margin-bottom: 20px;
-  }
-  #div6 ul li:hover {
-    color: white;
-    background-color: green;
-    cursor: pointer;
-    border: 2px;
-    border-radius: 5px;
-    padding: 3px;
-  }
-  #div6 a:hover {
-    color: white;
-    text-decoration: none;
-  }
+ {
+  margin: 0;
+  padding: 0;
 }
-@media only screen and (max-width: 480px) {
-  .body {
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    background-color: black;
-    color: white;
-  }
+body {
+  background-color: black;
+  color: white;
+}
+.body {
+  height: 100%;
+  padding-top: 40px;
+  padding-right: 100px;
+  padding-bottom: 40px;
+  padding-left: 100px;
+  color: white;
+  background-color: black;
+}
 
-  .main {
-    font-size: medium;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serifs;
-  }
+.main {
+  border: 1px;
+  height: 100%;
+  font-size: large;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serifs;
+}
+.fa-sun {
+  width: 20px;
+  height: 20px;
+  border: 1px;
+  border-style: solid;
+  border-radius: 50%;
+  background-color: #6b6b6b;
+  border-color: #6b6b6b;
+  padding: 5px;
+  margin-top: 0px;
+  margin-left: 5px;
+  font-size: 20px;
+}
 
-  .sect {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
+.article {
+  display: flex;
+  flex-direction: row;
+}
+.secttwo {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
 
-  .sect h2 {
-    font-size: 18px;
-    margin-right: 0; /* Remove margin for smaller screens */
-    text-align: center;
-  }
-  .sect h2 b {
-    font-size: 10px;
-    font-weight: 300;
-  }
-  .sect h2 b {
-    animation: fade-in-out 1s infinite;
-  }
-  @keyframes fade-in-out {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  .sect ul {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-    list-style: none;
-  }
+.secttwo h1 {
+  font-size: 60px;
+  margin-top: 40px;
+}
+.secttwo h1 b {
+  color: green;
+}
+.secttwo p {
+  width: 650px;
+  margin-top: 40px;
+}
+.sect3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+.sect3 ul li {
+  list-style: none;
+  margin-top: 30px;
+  border: 3px;
+  border-radius: 1px;
+  padding: 10px;
+}
+.sect3 ul li a i {
+  margin-right: 8px;
+}
+.sect3 ul li span {
+  margin-right: 10px;
+}
 
-  .sect ul li {
-    font-size: 14px;
-  }
-  .article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-  .secttwo {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+.sect3 ul li:hover {
+  border: 3px;
+  border-style: ridge;
+  border-color: green;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-  .secttwo h1 {
-    font-size: 40px;
-    margin-top: 50px;
-  }
+.sect3 ul {
+  text-align: right;
+  justify-items: center;
+  margin-left: 100px;
+}
 
-  .secttwo p {
-    width: auto;
-    margin-top: 20px;
-    text-align: justify;
-  }
-  .sect3 ul {
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the start */
-  }
-  .sect3 ul li {
-    list-style: none;
-  }
+.sect3 ul li a {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+}
+.fa-flask-vial {
+  color: green;
+}
 
-  .sect3 .list {
-    margin: 10px 0; /* Add vertical space between items */
-    width: 100%; /* Full width for list items */
-  }
+.home {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.home h2 {
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: bold;
+}
 
-  .sect3 a {
-    font-size: 18px; /* Increase font size for better readability */
-  }
-  .home {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 50px;
-  }
+.home hr {
+  color: rgb(41, 40, 40);
+  font-weight: 2px;
+  font-size: 4px;
+}
+#div1 h3 a {
+  text-decoration: none;
+  color: white;
+}
+#div1 h3 a:hover {
+  color: green;
+  font-weight: bold;
+}
 
-  .home h2 {
-    font-size: 40px;
-  }
-  .div:hover {
-    border: none;
-    background-color: inherit;
-    cursor: default;
-  }
-  #div2:hover {
-    border: none;
-    background-color: inherit;
-    cursor: default;
-  }
-  #div4:hover {
-    border: none;
-    background-color: inherit;
-    cursor: default;
-  }
-  #div1 h3 {
-    font-size: 20px;
-    text-align: center;
-  }
+#div1 ul {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+#div1 ul li {
+  list-style: none;
+  font-size: 15px;
+  color: rgb(22, 99, 22);
+  border: 1px;
+  border-radius: 8px;
+  border-style: ridge;
+  border-color: rgb(22, 99, 22);
+  padding: 4px;
+}
+#div1 ul :hover {
+  color: white;
+  background-color: green;
+  cursor: pointer;
+}
+#div1 p {
+  font-size: medium;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  color: rgb(77, 75, 75);
+}
 
-  #div1 ul {
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 0;
-    text-align: center;
-  }
+#div3 h3 a {
+  text-decoration: none;
+  color: white;
+}
+#div3 h3 a:hover {
+  color: green;
+  font-weight: bold;
+}
 
-  #div1 ul li {
-    font-size: 14px;
-    padding: 8px;
-  }
+#div3 ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  gap: 25px;
+}
+#div3 ul li {
+  list-style: none;
+  font-size: 15px;
+  color: rgb(22, 99, 22);
+  border: 1px;
+  border-radius: 8px;
+  border-style: ridge;
+  border-color: rgb(22, 99, 22);
+  padding: 4px;
+}
+#div3 ul :hover {
+  color: white;
+  background-color: green;
+  cursor: pointer;
+}
+#div3 p {
+  font-size: medium;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: rgb(77, 75, 75);
+}
+#div5 h3 a {
+  text-decoration: none;
+  color: white;
+}
+#div5 h3 a:hover {
+  color: green;
+  font-weight: bold;
+}
 
-  #div3 h3 {
-    font-size: 20px;
-    text-align: center;
-  }
+#div5 ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  gap: 25px;
+}
+#div5 ul li {
+  list-style: none;
+  font-size: 15px;
+  color: rgb(22, 99, 22);
+  border: 1px;
+  border-radius: 8px;
+  border-style: ridge;
+  border-color: rgb(22, 99, 22);
+  padding: 4px;
+}
+#div5 ul :hover {
+  color: white;
+  background-color: green;
+  cursor: pointer;
+}
+#div5 p {
+  font-size: medium;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: rgb(77, 75, 75);
+}
 
-  #div3 ul {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
+#allpost {
+  text-align: right;
+  margin-right: 100px;
+  margin-top: 10px;
+  font-weight: 200;
+}
+#allpost a {
+  text-decoration: none;
+  color: rgb(22, 99, 22);
+  border: 1px;
+  border-bottom-color: rgb(22, 99, 22);
+  border-bottom-style: ridge;
+  padding: 4px;
+}
+.fa-arrow-right-long {
+  font-weight: 10;
+  font-size: smaller;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+#allpost :hover {
+  background-color: rgb(22, 99, 22);
+  color: white;
+}
 
-  #div3 ul li {
-    font-size: 14px;
-    padding: 8px;
-  }
+#div6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#div6 h4 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+#div6 ul {
+  display: flex;
+  align-items: first baseline;
+  gap: 70px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+#div6 ul li:hover {
+  color: white;
+  background-color: green;
+  cursor: pointer;
+  border: 2px;
+  border-radius: 5px;
+  padding: 3px;
+}
+.fa-instagram {
+  color: red;
+}
+.fa-linkedin {
+  color: blue;
+}
+.fa-github {
+  color: #6b6b6b;
+}
+#div6 a {
+  text-decoration: none;
+  color: white;
+}
 
-  #div5 h3 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  #div5 ul {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-
-  #div5 ul li {
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  #allpost {
-    margin-right: 20px;
-    text-align: center;
-  }
-
-  #div6 h4 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  #div6 ul {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
+#div6 a:hover {
+  color: white;
+  text-decoration: none;
 }

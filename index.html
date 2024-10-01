@@ -12,21 +12,66 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body class="dark">
+  <body>
     <section class="body">
       <section class="main">
-        <div class="sect">
-          <h2>~/A.B.D.L<b>|</b></h2>
-          <ul>
-            <li><a class="link" href="/index.html">Home</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="">Guestbook</a></li>
-            <li><a href="">Certificates</a></li>
-            <span class="theme"><i class="fa-regular fa-sun"></i></span>
-          </ul>
-        </div>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+          <div class="container">
+            <a class="navbar-brand fst-italic" href="#">A.B.D.L</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active fst-italic"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fst-italic" href="blog.html"
+                    >Blog</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fst-italic" href="about.html"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fst-italic" href="">Guestbook</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fst-italic" href="">Certificates</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
         <article class="article">
           <section class="secttwo">
             <h1>Hi, I am <b>Abdul lateef</b></h1>
@@ -61,60 +106,58 @@
         <article class="home">
           <h2>Latest</h2>
           <hr />
-          <div class="div">
-            
-              <div id="div1">
-                <h3> <a href="crafting.html">Crafting an HTTP Library in Rust</h3>
-                <ul>
-                  <li>RUST</li>
-                  <li>NETWORKING</li>
-                  <li>HTTP</li>
-                  <li>BACKEND</li>
-                </ul>
-                <p>
-                  Welcome to the journey of building an HTTP in Rust - a
-                  language known for its emphasis on safety, speed, and
-                  concurrency
-                </p>
-              </div>
-            </a>
+
+          <div id="div1">
+            <h3>
+              <a href="crafting.html">Crafting an HTTP Library in Rust </a>
+            </h3>
+            <ul>
+              <li>RUST</li>
+              <li>NETWORKING</li>
+              <li>HTTP</li>
+              <li>BACKEND</li>
+            </ul>
+            <p>
+              Welcome to the journey of building an HTTP in Rust - a language
+              known for its emphasis on safety, speed, and concurrency
+            </p>
           </div>
-          <div id="div2">
-            <a href="">
-              <div id="div3">
-                <h3>Understanding Big O- Analyzing Algorithm Efficiency</h3>
-                <ul>
-                  <li>BIG-O</li>
-                  <li>ALGORITHMS</li>
-                  <li>EFFICIENCY</li>
-                  <li>ASYMPTOTIC-RUNTIME</li>
-                  <li>DATA-STRUCTURES</li>
-                </ul>
-                <p>
-                  Big - O time (Also known as asymptotic runtime) is the metric
-                  used to describe the efficiency of an algorithm
-                </p>
-              </div>
-            </a>
+
+          <div id="div3">
+            <h3>
+              <a href=""
+                >Understanding Big O- Analyzing Algorithm Efficiency
+              </a>
+            </h3>
+            <ul>
+              <li>BIG-O</li>
+              <li>ALGORITHMS</li>
+              <li>EFFICIENCY</li>
+              <li>ASYMPTOTIC-RUNTIME</li>
+              <li>DATA-STRUCTURES</li>
+            </ul>
+            <p>
+              Big - O time (Also known as asymptotic runtime) is the metric used
+              to describe the efficiency of an algorithm
+            </p>
           </div>
-          <div id="div4">
-            <a href="">
-              <div id="div5">
-                <h3>Data structure in javascript</h3>
-                <ul>
-                  <li>DATA</li>
-                  <li>WEB</li>
-                  <li>APPLICATIONS</li>
-                  <li>DATABASES</li>
-                  <li>TECH</li>
-                </ul>
-                <p>
-                  For years javascript was only used in the web browser,this all
-                  change with the emmergency of platform such as Node and
-                  Spidermonkey
-                </p>
-              </div>
-            </a>
+
+          <div id="div5">
+            <h3>
+              <a href="">Data structure in javascript </a>
+            </h3>
+            <ul>
+              <li>DATA</li>
+              <li>WEB</li>
+              <li>APPLICATIONS</li>
+              <li>DATABASES</li>
+              <li>TECH</li>
+            </ul>
+            <p>
+              For years javascript was only used in the web browser,this all
+              change with the emmergency of platform such as Node and
+              Spidermonkey
+            </p>
           </div>
         </article>
         <div id="allpost">
