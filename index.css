@@ -331,16 +331,13 @@
     width: auto;
     text-align: center;
   }
-  .secttwo h1 b {
-    color: green;
-  }
   .secttwo p {
     width: auto;
     margin-top: 5px;
     font-size: medium;
     text-align: center;
   }
-  .welcome {
+  .secttwo h1 b {
     position: absolute;
 
     transform: translate(-20%, -20%);
