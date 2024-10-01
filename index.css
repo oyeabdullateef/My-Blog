@@ -338,8 +338,6 @@
     text-align: center;
   }
   .secttwo h1 b {
-    position: absolute;
-
     transform: translate(-20%, -20%);
     -webkit-text-stroke: 1px white;
     color: transparent;
