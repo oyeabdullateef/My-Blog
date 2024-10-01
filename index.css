@@ -340,6 +340,23 @@
     font-size: medium;
     text-align: center;
   }
+  .welcome {
+    position: absolute;
+
+    transform: translate(-20%, -20%);
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    background-color: green;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -900px 0;
+    animation: backcolor 5s linear infinite alternate;
+  }
+  @keyframes backcolor {
+    100% {
+      background-position: 0 0;
+    }
+  }
   .sect3 {
     display: flex;
     flex-direction: column;
