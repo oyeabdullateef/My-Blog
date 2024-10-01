@@ -316,10 +316,13 @@
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
   }
-  .secttwo {
+  .article {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+  }
+  .secttwo {
+    margin-top: 10px;
   }
   .secttwo h1 {
     margin-top: 20px;
