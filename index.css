@@ -357,18 +357,21 @@
     cursor: default;
     color: green;
   }
-  .sect3 ul {
-    text-align: right;
-    justify-items: center;
-    margin-left: 100px;
-  }
   .sect3 ul li a {
     text-decoration: none;
     color: white;
   }
+  .sect3 ul li a:hover {
+    color: green;
+  }
+
   .fa-flask-vial {
     color: green;
   }
+  .fa-flask-vial:hover {
+    color: white;
+  }
+
   .fa-book-open {
     color: white;
   }
