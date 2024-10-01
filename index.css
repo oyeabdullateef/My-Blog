@@ -322,6 +322,7 @@
     gap: 20px;
   }
   .secttwo h1 {
+    margin-top: 20px;
     font-size: 30px;
     font-weight: bold;
     width: auto;
@@ -331,6 +332,41 @@
   }
   .secttwo p {
     width: auto;
-    margin-top: 10px;
+    margin-top: 5px;
+  }
+  .sect3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sect3 ul li {
+    list-style: none;
+    margin-top: 10;
+  }
+  .sect3 ul li a i {
+    margin-right: 5px;
+  }
+  .sect3 ul li span {
+    margin-right: 5px;
+  }
+
+  .sect3 ul li:hover {
+    cursor: default;
+    color: green;
+  }
+
+  .sect3 ul {
+    text-align: right;
+    justify-items: center;
+    margin-left: 100px;
+  }
+
+  .sect3 ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  .fa-flask-vial {
+    color: green;
   }
 }
