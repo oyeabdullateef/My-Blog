@@ -391,4 +391,15 @@
   .fa-book-open {
     color: white;
   }
+  .home {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .home h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
 }
