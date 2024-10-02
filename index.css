@@ -401,7 +401,7 @@
     text-align: center;
   }
   #div1 h3 {
-    font-size: medium;
+    font-size: 15px;
     font-weight: bold;
     text-align: center;
     width: auto;
@@ -418,5 +418,6 @@
     display: flex;
     flex-direction: column;
     list-style: none;
+    gap: 10px;
   }
 }
