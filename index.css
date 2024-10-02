@@ -393,7 +393,6 @@
   }
   .home {
     margin-top: 10px;
-    font-size: 30px;
     font-weight: bold;
     text-align: center;
   }
@@ -401,5 +400,15 @@
     font-size: 30px;
     font-weight: bold;
     text-align: center;
+  }
+  #div1 h3 {
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+  }
+  #div1 h3 a {
+    text-decoration: none;
+    color: white;
   }
 }
