@@ -412,7 +412,7 @@
   }
   #div1 h3 a:hover {
     color: green;
-    font-size: 10px;
+    font-size: 20px;
   }
   #div1 ul {
     display: flex;
