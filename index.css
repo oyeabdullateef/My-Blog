@@ -419,5 +419,14 @@
     flex-direction: column;
     list-style: none;
     gap: 10px;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+  }
+  #div1 ul li {
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 5px;
   }
 }
