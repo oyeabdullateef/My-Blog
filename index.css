@@ -393,7 +393,6 @@
   }
   .home {
     margin-top: 10px;
-    font-weight: bold;
     text-align: center;
   }
   .home h2 {
@@ -410,5 +409,14 @@
   #div1 h3 a {
     text-decoration: none;
     color: white;
+  }
+  #div1 h3 a:hover {
+    color: green;
+    font-size: 10px;
+  }
+  #div1 ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
   }
 }
