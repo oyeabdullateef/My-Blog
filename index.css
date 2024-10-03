@@ -346,20 +346,20 @@
   }
   .sect3 ul {
     text-align: center;
-    font-weight: 600;
+    font-weight: bold;
     font-size: medium;
   }
 
   .sect3 ul li {
     list-style: none;
     margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
     border: 1px;
     border-style: solid;
     border-radius: 5px;
     padding: 5px;
     border-color: green;
+    font-weight: bold;
   }
   .sect3 ul li a i {
     margin-right: 5px;
@@ -375,7 +375,6 @@
   .sect3 ul li a {
     text-decoration: none;
     color: white;
-    margin-bottom: 15px;
   }
   .sect3 ul li a:hover {
     color: green;
@@ -396,15 +395,15 @@
     text-align: center;
   }
   .home h2 {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
-    text-align: center;
   }
   #div1 h3 {
-    font-size: 15px;
+    font-size: 25px;
     font-weight: bold;
-    text-align: center;
+    align-items: center;
     width: auto;
+    text-transform: capitalize;
   }
   #div1 h3 a {
     text-decoration: none;
@@ -419,7 +418,6 @@
     flex-direction: column;
     list-style: none;
     gap: 10px;
-    text-align: center;
     font-size: medium;
     font-weight: bold;
   }
@@ -427,6 +425,128 @@
     border: 1px;
     border-style: solid;
     border-radius: 5px;
+    border-color: green;
     padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  #div1 ul li:hover {
+    color: green;
+  }
+  #div1 p {
+    width: auto;
+    margin-top: 5px;
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #div3 h3 {
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center;
+    width: auto;
+    text-transform: capitalize;
+  }
+  #div3 h3 a {
+    text-decoration: none;
+    color: white;
+  }
+  #div3 h3 a:hover {
+    color: green;
+    font-size: 20px;
+  }
+  #div3 ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+    font-size: medium;
+    font-weight: bold;
+  }
+  #div3 ul li {
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: green;
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  #div3 ul li:hover {
+    color: green;
+  }
+  #div3 p {
+    width: auto;
+    margin-top: 5px;
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #div5 h3 {
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center;
+    width: auto;
+    text-transform: capitalize;
+  }
+  #div5 h3 a {
+    text-decoration: none;
+    color: white;
+  }
+  #div5 h3 a:hover {
+    color: green;
+    font-size: 20px;
+  }
+  #div5 ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+    font-size: medium;
+    font-weight: bold;
+  }
+  #div5 ul li {
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: green;
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  #div5 ul li:hover {
+    color: green;
+  }
+  #div5 p {
+    width: auto;
+    margin-top: 5px;
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #allpost {
+    text-align: right;
+    margin-right: 20px;
+  }
+  #allpost a {
+    text-decoration: none;
+    color: rgb(22, 99, 22);
+    border: 1px;
+    border-bottom-color: rgb(22, 99, 22);
+    border-bottom-style: ridge;
+    padding: 4px;
+  }
+  .fa-arrow-right-long {
+    font-weight: 10;
+    font-size: smaller;
+    margin-top: 4px;
+    margin-left: 4px;
+  }
+  #allpost :hover {
+    background-color: rgb(22, 99, 22);
+    color: white;
   }
 }
