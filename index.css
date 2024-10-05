@@ -358,7 +358,6 @@
   }
   #div1 h3 a:hover {
     color: green;
-    font-size: 20px;
   }
   #div1 ul {
     display: flex;
@@ -377,9 +376,10 @@
     text-align: center;
     margin-top: 10px;
     margin-right: 20px;
+    color: green;
   }
   #div1 ul li:hover {
-    color: green;
+    color: white;
   }
   #div1 p {
     width: auto;
@@ -403,7 +403,6 @@
   }
   #div3 h3 a:hover {
     color: green;
-    font-size: 20px;
   }
   #div3 ul {
     display: flex;
@@ -422,9 +421,10 @@
     text-align: center;
     margin-top: 10px;
     margin-right: 20px;
+    color: green;
   }
   #div3 ul li:hover {
-    color: green;
+    color: white;
   }
   #div3 p {
     width: auto;
@@ -448,7 +448,6 @@
   }
   #div5 h3 a:hover {
     color: green;
-    font-size: 20px;
   }
   #div5 ul {
     display: flex;
@@ -467,9 +466,10 @@
     text-align: center;
     margin-top: 10px;
     margin-right: 20px;
+    color: green;
   }
   #div5 ul li:hover {
-    color: green;
+    color: white;
   }
   #div5 p {
     width: auto;
