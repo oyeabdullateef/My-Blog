@@ -13,24 +13,65 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body class="light">
+  <body>
     <section class="body">
       <section class="main">
-        <div class="sect">
-          <h1>
-            <a href="index.html">~/blog/http-library<b>|</b></a>
-          </h1>
-          <ul>
-            <li><a class="link" href="/index.html">Home</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="">Guestbook</a></li>
-            <li><a href="">Certificates</a></li>
-            <span class="theme"><i class="fa-regular fa-sun"></i></span>
-          </ul>
-        </div>
-
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+          <div class="container">
+            <a class="navbar-brand fst-italic" href="index.html">A.B.D.L</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active fst-italic"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fst-italic" href="blog.html"
+                    >Blog</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fst-italic" href="about.html"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fst-italic" href="">Guestbook</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fst-italic" href="">Certificates</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
         <article class="article">
           <p><i class="fa-regular fa-calendar"></i> Tuesday, february9, 2023</p>
           <h1>Crafting an HTTP Library in Rust</h1>
@@ -41,7 +82,6 @@
           </ul>
         </article>
         <hr />
-
         <div class="div1">
           <section class="sect1">
             <div id="div1">
@@ -57,7 +97,6 @@
                   </p>
                 </h5>
               </div>
-
               <div id="div5">
                 <img src="dolphin.jpg" alt="" />
               </div>
@@ -157,15 +196,614 @@
               </p>
               <p>
                 treasures—a request contains a method, a path, headers, and a
-                message body. Let's create the necessary
+                message body. Let's create the necessary structures to
+                encapsulate these elements in <b>src/httprequest.rs :</b>
               </p>
+              <div class="div">
+                <p>use std::collections:: <code>HashMap</code>;</p>
+                <p>
+                  // Enum to represent the resource type (path) in an HTTP
+                  request #[derive(PartialEq, Debug) <br />
+                  <br />
+                  pub enum <code>Resource</code> <br />
+                  <br />
+                  { <code>Path(String)</code>, }
+                </p>
+                <br />
+                <p>// Struct to represent an HTTP request</p>
+                <p>#[derive(PartialEq, Debug)]</p>
+                <p>
+                  pub struct <code>HttpRequest</code> {<br />
+                  <br />
+                  pub method: <code>Method</code>,
+                  <br />
+                  <br />
+                  pub version: <code>version</code>,
+                  <br />
+                  <br />
+                  pub resource: <code>Resource</code>,
+                  <br />
+                  <br />
+                  pub headers: <code>HashMap sring,string</code>,<br />
+                  <br />
+                  }
+                </p>
+              </div>
+              <li>
+                <b>Resource Enum</b>: Represents the path of our request,
+                encapsulated in the Resource enum.
+              </li>
+              <li>
+                <b>HttpRequest Struct</b>: Our representation of an HTTP
+                request, which includes the method, version, resource, headers,
+                and the message body.
+              </li>
+            </article>
+            <article id="article3">
+              <h3>Step 2: Implement Request Parsing</h3>
               <p>
-                structures to encapsulate these elements in
-                <b>src/httprequest.rs</b>:
+                Let's empower our library to parse incoming HTTP requests,
+                transforming raw text into a structured representation.
+              </p>
+              <div class="one">
+                <div class="two">
+                  <p>
+                    // Implementing conversion from a raw string to an
+                    HttpRequest
+                  </p>
+                  <p>
+                    impl <code><b>from</b></code> string for
+                    <code>HttpRequest</code> {
+                  </p>
+                  <p>fn <code>from (req: string)</code> -> self {</p>
+                  <p>
+                    let mut parsed_method =
+                    <code>Method</code>::<code>Uninitialized</code>;
+                  </p>
+                  <p>let mut parsed_version = <code>Version</code>::V1_1;</p>
+                  <p>
+                    let mut parsed_resource =
+                    <code>Resource</code>::<code>Path</code>("".
+                    <code>to_string</code>( ));
+                  </p>
+                  <p>
+                    let mut parsed_headers =
+                    <code>HashMap</code>::<code>new</code>;
+                  </p>
+                  <p>let mut parsed_msg_body = "";</p>
+                  <br />
+                  <p>// Looping through each line of the raw HTTP request</p>
+                  <p>for line in req.<code>lines</code>( ) {</p>
+                  <p>
+                    // Parsing logic to identify method, version, headers, and
+                    message body
+                  </p>
+                  <p>for line in req.<code>lines</code>("HTTP")</p>
+                  <p>
+                    { <br />
+                    let (method, s, version) =
+                    <code>process_req_line</code>(line);
+                  </p>
+                  <p>parsed_method = method;</p>
+                  <p>parsed_resource = resource;</p>
+                  <p>parsed_version = version;<br />}</p>
+                  <p>else if line. <code>len</code>( ) == 0</p>
+                  <p>
+                    {<br />
+                    <br />
+                    }
+                  </p>
+                  <p>
+                    else{ <br /><br />parsed_msg_body = line;<br />
+                    <br />
+                    }
+                    <br />
+                    <br />
+                    }
+                  </p>
+                  <p>
+                    // Creating and returning an HttpRequest instance <br />
+                    <code>HttpRequest</code> {
+                  </p>
+                  <p>method: parsed_method,</p>
+                  <p>version: parsed_version,</p>
+                  <p>resource: parsed_resource,</p>
+                  <p>headers: parsed_headers,</p>
+                  <p>
+                    msg_body: parsed_msg_body. <code>to_string</code>( ),
+                    <br />}
+                  </p>
+                  <p>
+                    } <br />
+                    <br />
+                    } <br />
+                  </p>
+                </div>
+              </div>
+              <li>
+                The <b>From(string)</b> implementation enables the conversion of
+                raw text (String) into an <b> HttpRequest</b> structure.
+              </li>
+              <li>
+                The parsing logic navigates through the incoming text,
+                identifying method, version, headers, and the message body.
+              </li>
+            </article>
+            <article id="article4">
+              <h3>Step 3: Define Enums for Method and Versio</h3>
+              <p>
+                Enums play a crucial role in representing HTTP methods and
+                versions elegantly.
+              </p>
+              <div class="three">
+                <p>// Enum to represent HTTP methods</p>
+                <p>#[derive(PartialEq)]</p>
+                <p>#[derive(Debug)]</p>
+                <p>pub enum <code>Method </code>{</p>
+                <p><code> Get</code>,</p>
+                <p><code> Post</code>,</p>
+                <p><code> Uninitialized</code>,</p>
+                <p>}</p>
+                <br />
+                <p>// Enum to represent HTTP versions</p>
+                <p>#[derive(PartialEq, Debug)]</p>
+                <p>pub enum <code>Version</code> {</p>
+                <p>V1_1,</p>
+                <p>V2_0,</p>
+                <p><code> Uninitialized</code>,</p>
+                <p>}</p>
+              </div>
+              <li>
+                <b> Method Enum</b>: Represents HTTP methods such as GET and
+                POST, with <b>Uninitialized</b> as an indicator when the method
+                is unknown.
+              </li>
+              <li>
+                <b>Version Enum</b>: Captures HTTP versions, including V1_1 and
+                V2_0, with <b>Uninitialized</b> for cases where the version is
+                yet to be determined.
+              </li>
+            </article>
+            <article id="article5">
+              <h3>Step 4: Add Unit Tests</h3>
+              <p>
+                Before our library ventures into the world, let's fortify it
+                with unit tests to ensure its resilience.
+              </p>
+              <div class="four">
+                <p>// Unit tests for the library</p>
+                <p>#[cfg(test)]</p>
+                <p>mod tests {</p>
+                <p>use super::*;</p>
+                <br />
+                <p>
+                  // Test method for converting raw strings into Method enums
+                  <br />
+                  #[test]
+                </p>
+                <p>fn <code>test_method_into</code>( ) {</p>
+                <p>
+                  let m: <code> Method</code> =
+                  <span> "GET"</span>.<code>into</code>( );
+                </p>
+                <p>
+                  <span> assert_eq!</span>(m, <code> Method</code>::
+                  <code>Get</code>); <br />}
+                </p>
+                <br />
+                <p>
+                  // Test method for converting HTTP version strings into
+                  Version enums
+                  <br />
+                  #[test]
+                </p>
+                <p>fn <code> test_version_into</code>( ) {</p>
+                <p>
+                  let m: <code> Version</code> =<span> "HTTP/1.1"</span>.
+                  <code>into</code>( );
+                </p>
+                <p>
+                  <span>assert_eq!</span>(m, <code>Version</code>::V1_1);
+                  <br />}
+                </p>
+                <br />
+                <p>
+                  // Comprehensive test simulating the arrival of an HTTP
+                  request and verifying the parser's accuracy <br />
+                  #[test]
+                </p>
+                <p>fn <code>test_incoming_http_request</code>( ) {</p>
+                <p>
+                  let s: <code> String</code> = <code>String</code>::
+                  <code>from</code>(
+                  <span
+                    >"GET /greeting HTTP/1.1\r\nHost:
+                    localhost:3000\r\nUser-Agent: curl/7.64.1\r\nAccept:
+                    */*\r\n\r\n"</span
+                  >);
+                </p>
+                <p>
+                  let mut headers_expected =<code> HashMap</code
+                  >::<code>new</code>( );
+                </p>
+                <p>
+                  headers_expected.<code>insert</code>(<span>"Host"</span>.<code>into</code>(),
+                  <span> " localhost"</span>.<code>into</code>( ));
+                </p>
+                <p>
+                  headers_expected.<code>insert</code>(<span>"Accept"</span>.<code>into</code>(),
+                  <span>" */*"</span>.<code>into</code>( ));
+                </p>
+                <p>
+                  headers_expected.<code>insert</code>(<span>"User-Agent"</span>.<code>into</code>(),
+                  <span>" curl/7.64.1"</span>.<code>into</code>( ));
+                </p>
+                <p>
+                  let req: <code>HttpRequest</code> = s.<code>into</code>( );
+                </p>
+                <br />
+                <p>// Assertions to verify parsed HttpRequest components</p>
+                <p>
+                  <span>assert_eq!</span>(<code>Method</code>::<code>Get</code>,
+                  req.method);
+                </p>
+                <p>
+                  <span>assert_eq!</span>(<code>Version</code>::V1_1,
+                  req.version);
+                </p>
+                <p>
+                  <span>assert_eq!</span
+                  >(<code>Resource</code>::<code>Path</code>(<span>"/greeting"</span>.<code>to_string</code>()),
+                  req.resource);
+                </p>
+                <p>
+                  <span>assert_eq!</span>(headers_expected, req.headers);
+                  <br />} <br /><br />}
+                </p>
+              </div>
+              <li>
+                <b>Test Method Into</b>: Ensures the conversion of raw strings
+                into <b>Method</b> enums is accurate.
+              </li>
+              <li>
+                <b>Test Version Into</b>: Validates the transformation of HTTP
+                version strings into <b>Version</b> enums.
+              </li>
+              <li>
+                <b>Test Incoming HTTP Request</b>: A comprehensive test
+                simulating the arrival of an HTTP request and verifying the
+                parser's accuracy.
+              </li>
+            </article>
+            <article id="article6">
+              <h3>HTTP Response Implementation</h3>
+              <p>
+                Now, let's shift our focus to handling HTTP responses. We aim to
+                construct well-formed responses to gracefully communicate with
+                clients.
               </p>
             </article>
+            <article id="article7">
+              <h3>Step 5: Define HTTP Response Components</h3>
+              <p>
+                In <b>src/httpresponse.rs</b>, we define the components of an
+                HTTP response—a structured entity ready to traverse the digital
+                realms.
+              </p>
+              <div class="five">
+                <p>use std::collections::<code>HashMap</code>;</p>
+                <p>use std::io::{<code>Result</code>, <code>Write</code>};</p>
+                <br />
+                <p>// Struct to represent an HTTP response</p>
+                <p>#[derive(Debug, PartialEq, Clone)]</p>
+                <p>pub struct <code>HttpResponse</code><'a> {</p>
+                <p>version: &'a str,</p>
+                <p>status_code: &'a str,</p>
+                <p>status_text: &'a str,</p>
+                <p>
+                  headers: <code>Option</code><<code>Hashmap</code><&'a str, &'a
+                  str>>,
+                </p>
+                <p>body: <code>Option</code><<code>string</code>>,<br />}</p>
+              </div>
+              <li>
+                <b>HttpResponse Struct</b>: Represents the essential elements of
+                an HTTP response—version, status code, status text, headers, and
+                the body.
+              </li>
+            </article>
+            <article id="article8">
+              <h3>Step 6: Implement Response Construction</h3>
+              <p>
+                We now create methods to construct HTTP responses, bringing life
+                to the structured <b>HttpResponse</b>.
+              </p>
+              <div class="six">
+                <p>// Implementing default for HttpResponse</p>
+                <p>
+                  impl<'a> <code>Default</code> for
+                  <code>HttpResponse</code><'a> {
+                </p>
+                <p>fn <code>default</code>( ) -> Self {</p>
+                <p>HttpResponse {</p>
+                <p>version: <span>"HTTP/1.1"</span>,</p>
+                <p>status_code: <span>"200"</span>,</p>
+                <p>status_text: <span>"OK"</span>,</p>
+                <p>headers: <span>None</span>,</p>
+                <p>
+                  body: <span>None</span>, <br />
+                  <br />
+                  }
+                </p>
+                <p>
+                  } <br />
+                  <br />}
+                </p>
+                <br />
+                <p>// Implementation for HttpResponse</p>
+                <p>impl<'a> <code>HttpResponse</code><'a> {</p>
+                <p>// Constructor for creating an HttpResponse instance</p>
+                <p>pub fn <code>new</code>(</p>
+                <p>status_code: &'a str,</p>
+                <p>
+                  headers: <code>option</code> <<code>HashMap</code><&'a str,
+                  &'a str>>,
+                </p>
+                <p>body: <code>Option</code><<code>String</code>>,</p>
+                <p>) -> <code>HttpResponse</code><'a> {</p>
+                <p>
+                  // Creating a response with specified status code, headers,
+                  and body
+                </p>
+                <br />
+                <p>
+                  let mut response: <code> HttpResponse</code><'a> =
+                  <code>HttpResponse</code>::<code>default</code>();
+                </p>
+                <p>if status_code != <span>"200"</span> {</p>
+                <p>
+                  response.status_code = status_code.<code>into</code>();
+                  <br />}
+                </p>
+                <br />
+                <p>// Handling headers, setting defaults if not provided</p>
+                <p>response.headers = match &headers {</p>
+                <p><code>Some</code>(_h) => headers,</p>
+                <p><code>None</code> => {</p>
+                <p>let mut h = <code>HashMap</code>::<code>new</code>();</p>
+                <p>
+                  h.<code>insert</code>(<span>"Content-Type"</span> ,
+                  <span>"text/html"</span>);
+                </p>
+                <p>
+                  <code>Some</code>(h) <br />
+                  <br />} <br />
+                  <br />};
+                </p>
+                <p>// Determining status text based on status code</p>
+                <p>response.status_text = match response.status_code {</p>
+                <p>
+                  <span>"200"</span> => <span>"OK"</span>.<code>into</code>( ),
+                </p>
+                <p>
+                  <span>"400"</span> =>
+                  <span>"Bad Request"</span>.<code>into</code>( ),
+                </p>
+                <p>
+                  <span>"404"</span> =>
+                  <span>"Not Found"</span>.<code>into</code>( ),
+                </p>
+                <p>
+                  <span>"500"</span> =>
+                  <span>"Internal Server Error"</span>.<code>into( )</code>,
+                </p>
+                <p>
+                  _ => <span>"Not Found"</span>.<code>into</code>( ), <br />
+                  <br />};
+                </p>
+                <p>// Setting response body</p>
+                <p>response.body = body;</p>
+                <p>response <br /><br />}</p>
+                <br />
+                <p>// Method to send the response to a writable stream</p>
+                <p>
+                  pub fn <code>send_response</code>(&self, write_stream: &mut
+                  impl <code>Write</code>) -> <code>Result</code><()> {
+                </p>
+                <p>let res = self.<code>clone</code>();</p>
+                <p>
+                  let response_string: <code>String</code> =
+                  <code>String</code>::<code>from</code>(res);
+                </p>
+                <p>
+                  // Writing the response string to the provided writable stream
+                </p>
+                <p>
+                  let _ = <span>write!</span> (write_stream, <span>"{ }"</span>,
+                  response_string); <br />Ok(( )) <br />
+                  <br />} <br />
+                  <br />}
+                </p>
+              </div>
+              <li>
+                <b>Default Implementation</b>: The default response is a serene
+                <b>200 OK</b> response with a content type of <b>text/html</b>.
+                This ensures a pleasant default experience unless customization
+                is needed.
+              </li>
+              <li>
+                <b>New Method</b>: A constructor for crafting responses based on
+                status codes, headers, and a body. This method breathes life
+                into the structured response.
+              </li>
+              <li>
+                <b>Send Response Method</b>: A messenger is summoned, allowing
+                the response to traverse the realms through a writable stream.
+              </li>
+            </article>
+            <article id="article9">
+              <h3>Step 7: Implement Response Serialization</h3>
+              <p>
+                Our grand finale involves converting the structured response
+                into the language of the web—a string ready to traverse the vast
+                digital landscapes.
+              </p>
+              <div class="seven">
+                <p>// Implementation for converting HttpResponse to a String</p>
+                <p>
+                  impl<'a> <code>From</code><<code>HttpResponse</code><'a>> for
+                  <code>String</code> {
+                </p>
+                <p>
+                  fn <code>from</code>(res: <code> HttpResponse</code>) ->
+                  <code> String</code> {
+                </p>
+                <p>let res1 = res.<code>clone</code>( );</p>
+                <p>// Formatting the response as a string</p>
+                <p>
+                  <span>format!</span>( <br />
+                  <span>"{} {} {}\r\n{}Content-Length: {}\r\n\r\n{}"</span>,
+                </p>
+                <p>&res1.<code>version</code>( ),</p>
+                <p>&res1.<code>status_code</code>( ),</p>
+                <p>&res1.<code>status_text</code>( ),</p>
+                <p>&res1.<code>headers</code>( ),</p>
+                <p>
+                  &res.body.<code>unwrap_or</code>("".<code>to_string</code>()).<code>len</code>(
+                  ),
+                </p>
+                <p>
+                  &res1.<code>body</code>( )
+                  <br />} <br />} <br />}
+                </p>
+              </div>
+              <li>
+                <b>From Implementation</b>: Our sorcery reaches its zenith,
+                translating the structured response into a string that echoes
+                across the bytes.
+              </li>
+            </article>
+            <article id="articleten">
+              <h3>Using the HTTP Library in Projects</h3>
+              <p>
+                Now that we've crafted our HTTP library, let's see how you can
+                use it in your Rust projects.
+              </p>
+              <ol>
+                <li>
+                  Add the library as a dependency in your
+                  <b> Cargo.toml</b> file:
+                  <div class="eight">
+                    <p>[<code>dependencies</code>]</p>
+                    <p>
+                      <span>http-library</span> = {
+                      <span>path = "./path/to/http-library"</span> }
+                    </p>
+                  </div>
+                  Make sure to replace ./path/to/http-library with the actual
+                  path to your HTTP library.
+                </li>
+                <li>
+                  Import the library in your Rust code:
+                  <div class="eight">
+                    <p>extern crate http_library;</p>
+                    <p>
+                      use http_library::{<code>HttpRequest</code>,
+                      <code>HttpResponse</code>, <code> Method</code>,
+                      <code>Version</code>};
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  Create an HTTP request:
+                  <div class="eight">
+                    <p>
+                      let raw_request =
+                      <span
+                        >"GET /greeting HTTP/1.1\r\nHost:
+                        localhost:3000\r\nUser-Agent: curl/7.64.1\r\nAccept:
+                        */*\r\n\r\n"</span
+                      >;
+                    </p>
+                    <p>
+                      let http_request: <code>HttpRequest</code> =
+                      raw_request.<code>into</code>();
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  Create an HTTP response:
+                  <div class="eight">
+                    <p>
+                      let http_response =
+                      <code>HttpResponse</code
+                      >::<code>new</code>(<span>"200"</span>,
+                      <code> None</code>, <code>Some</code>(<span
+                        >"Hello, World!"</span
+                      >.<code>to_string</code>()));
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  Send the HTTP response to a writable stream:
+                  <div class="eight">
+                    <p>
+                      let mut write_stream = <code>Vec</code>::<code>new</code>(
+                      ); // Replace this with your actual writable stream
+                    </p>
+                    <p>
+                      http_response.<code>send_response</code>(&mut
+                      write_stream).<code>expect</code>(<span
+                        >"Failed to send response"</span
+                      >);
+                    </p>
+                  </div>
+                </li>
+              </ol>
+            </article>
+            <div class="nine">
+              <h4>conclusion</h4>
+              <p>
+                In this journey, you've explored the creation of an HTTP library
+                in Rust with a focus on clarity and professionalism. Your code
+                transforms raw text into structured entities and vice versa,
+                establishing a robust foundation for web communication.
+              </p>
+              <p>
+                As you continue your exploration, remember that the web is a
+                vast, interconnected tapestry awaiting your influence. With Rust
+                as your tool, the adventure in web development is boundless and
+                thrilling.
+              </p>
+              <p>
+                Feel free to extend this library, adding features and refining
+                your code. With every line written, you contribute to the
+                narrative of the web. Happy coding, and may your Rust adventures
+                be both elegant and exciting.
+              </p>
+            </div>
           </section>
         </div>
+        <footer class="bg-dark py-5 mt-5">
+          <div class="container text-light text-center">
+            <div class="mb-2">
+              <a
+                href="https://www.instagram.com/oyeniyi_lateef123?igsh=M2huNDljbnNoazlj&utm_source=qr"
+              >
+                <i class="fa-brands fa-instagram text-danger me-4"> </i>
+              </a>
+              <a href="http://linkedin.com/in/abdul-lateef-oyeniyi-0b19692bb">
+                <i class="fa-brands fa-linkedin text-primary me-4"> </i
+              ></a>
+              <a href="https://github.com/">
+                <i class="fa-brands fa-github text-secondary"></i>
+              </a>
+            </div>
+            <small>
+              &copy; copyright by oyeniyi lateef. All rights reserved.</small
+            >
+          </div>
+        </footer>
       </section>
     </section>
 
