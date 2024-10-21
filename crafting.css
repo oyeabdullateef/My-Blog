@@ -678,4 +678,633 @@
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
   }
+  .article {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .article p {
+    word-spacing: 3px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: dimgrey;
+  }
+  .article h1 {
+    font-size: ;
+    font-weight: bold;
+    letter-spacing: 0px;
+  }
+  .article h1:hover {
+    color: green;
+  }
+
+  .ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    color: dimgrey;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  hr {
+    color: dimgrey;
+    width: 100%;
+  }
+  .div1 {
+    font-size: smaller;
+  }
+
+  #div p a {
+    text-decoration: none;
+    color: green;
+    font-size: 15px;
+  }
+  #div h5 p {
+    color: dimgray;
+    font-style: oblique;
+    font-size: 15px;
+  }
+
+  #div img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+
+  .div1 hr {
+    width: auto;
+  }
+  #div2 p {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #6b6b6b;
+    font-style: oblique;
+  }
+
+  #div2 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    justify-content: space-evenly;
+  }
+  #div4 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #div4 h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #div4 h2 {
+    text-transform: capitalize;
+    color: white;
+    margin-top: 10px;
+    width: auto;
+  }
+  #div4 h2:hover {
+    color: green;
+  }
+
+  #div2 ul li a {
+    border: 1px;
+    border-color: green;
+    border-style: solid;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+  #div2 ul li a {
+    text-decoration: none;
+    color: green;
+    font-weight: 500;
+  }
+
+  #div2 ul li a:hover {
+    background-color: green;
+    color: white;
+  }
+  #div3 {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  #div3 p {
+    color: dimgray;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: oblique;
+  }
+  #div3 p a {
+    text-transform: capitalize;
+    font-size: 15px;
+    color: green;
+    text-decoration: none;
+  }
+  #div3 p a:hover {
+    color: rgb(212, 90, 131);
+  }
+  #div3 h4 {
+    font-size: 15px;
+    font-weight: 500;
+    color: green;
+  }
+
+  #div3 h4 a {
+    text-decoration: none;
+    color: green;
+  }
+  #div3 h4 a:hover {
+    color: rgb(212, 90, 131);
+  }
+  #div3 h4 a i {
+    margin-right: 8px;
+  }
+  #div1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #div5 img {
+    width: 300px;
+    height: 150px;
+  }
+  #div6 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #div7 h3 {
+    font-size: 25px;
+    font-weight: bold;
+    color: green;
+    margin-top: 25px;
+  }
+  #div7 p {
+    width: auto;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    color: darkgrey;
+    font-style: oblique;
+  }
+  #div7 p b {
+    color: rgb(7, 85, 7);
+    border: 1px;
+    background-color: rgb(224, 224, 224);
+    padding: 3px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+  #article {
+    text-align: center;
+    margin-top: 25px;
+  }
+  #article h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: green;
+  }
+  #article #image1 {
+    margin-bottom: 30px;
+  }
+  #article p {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: dimgray;
+    font-style: oblique;
+  }
+
+  #article h6 {
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 15px;
+    color: dimgray;
+    font-style: oblique;
+  }
+  #article1 {
+    color: dimgray;
+    font-style: oblique;
+  }
+  #article1 li {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+  #article1 li b {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+  }
+  #article1 #image2 {
+    width: 350px;
+    height: 200px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+  }
+  #article1 p {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+
+  #article2 {
+    text-align: center;
+  }
+  #article2 h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: 20px;
+  }
+  #article2 p {
+    font-size: 15px;
+    font-weight: bolder;
+    color: dimgray;
+    font-style: oblique;
+  }
+  #article2 p b {
+    color: rgb(7, 85, 7);
+    border: 1px;
+    background-color: rgb(224, 224, 224);
+    padding: 3px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  #article2 li {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: oblique;
+    color: dimgray;
+    width: auto;
+  }
+  #article2 li b {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+  }
+  .div {
+    border: 1px;
+    border-radius: 30px;
+    border-style: solid;
+    background-color: black;
+  }
+  .div p {
+    font-size: 25px;
+    text-align: left;
+    margin: 10px;
+    margin-left: 30px;
+  }
+
+  #article3 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  #article3 h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-style: oblique;
+  }
+  #article3 p {
+    font-size: 15px;
+    font-weight: bolder;
+    color: dimgray;
+    font-style: oblique;
+  }
+  .one {
+    border: 1px;
+    border-radius: 30px;
+    border-style: solid;
+    background-color: black;
+  }
+  .two {
+    font-size: 25px;
+    text-align: left;
+    margin: 10px;
+    margin-left: 20px;
+  }
+  #article3 li {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: oblique;
+    color: dimgray;
+  }
+  #article3 li b {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+  }
+
+  #article4 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  #article4 h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-style: oblique;
+  }
+  #article4 p {
+    font-size: 15px;
+    font-weight: bolder;
+    color: dimgray;
+    font-style: oblique;
+  }
+
+  .three {
+    border: 1px;
+    border-radius: 30px;
+    border-style: solid;
+    background-color: black;
+  }
+  .three p {
+    margin: 10px;
+    margin-left: 20px;
+    font-size: 15px;
+    text-align: left;
+  }
+  #article4 li {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: oblique;
+    color: dimgray;
+  }
+  #article4 li b {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+  }
+
+  #article5 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  #article5 h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-style: oblique;
+  }
+  #article5 p {
+    font-size: 15px;
+    font-weight: bolder;
+    color: dimgray;
+    font-style: oblique;
+  }
+
+  .four {
+    border: 1px;
+    border-radius: 30px;
+    border-style: solid;
+    background-color: black;
+  }
+  .four p {
+    margin: 10px;
+    margin-left: 20px;
+    font-size: 15px;
+    text-align: left;
+  }
+  .four p span {
+    color: rgb(44, 243, 243);
+  }
+
+  #article5 li {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: oblique;
+    color: dimgray;
+    width: auto;
+  }
+  #article5 li b {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+  }
+
+  #article6 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  #article6 h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-style: oblique;
+  }
+  #article6 p {
+    font-size: 15px;
+    font-weight: bolder;
+    color: dimgray;
+    font-style: oblique;
+  }
+
+  #article7 {
+    margin-top: 20px;
+    text-align: center;
+  }
+  #article7 h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-style: oblique;
+  }
+  #article7 p {
+    font-size: 15px;
+    font-weight: bolder;
+    color: dimgray;
+    font-style: oblique;
+  }
+  #article7 p b {
+    color: white;
+  }
+  .five {
+    border: 1px;
+    border-radius: 30px;
+    border-style: solid;
+    background-color: black;
+  }
+  .five p {
+    margin: 10px;
+    margin-left: 20px;
+    font-size: 15px;
+    text-align: left;
+  }
+  #article7 li {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: oblique;
+    color: dimgray;
+    width: auto;
+  }
+  #article7 li b {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+  }
+  #article8 {
+    margin-top: 20px;
+    text-align: center;
+  }
+  #article8 h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-style: oblique;
+  }
+  #article8 p {
+    font-size: 15px;
+    font-weight: bolder;
+    color: dimgray;
+    font-style: oblique;
+  }
+  #article8 p b {
+    color: white;
+  }
+  .six {
+    border: 1px;
+    border-radius: 30px;
+    border-style: solid;
+    background-color: black;
+  }
+  .six p {
+    margin: 10px;
+    margin-left: 20px;
+    font-size: 15px;
+    text-align: left;
+  }
+  .six p span {
+    color: rgb(44, 243, 243);
+  }
+  #article8 li {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: oblique;
+    color: dimgray;
+    width: auto;
+  }
+  #article8 li b {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+  }
+
+  #article9 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  #article9 h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-style: oblique;
+  }
+  #article9 p {
+    font-size: 15px;
+    font-weight: bolder;
+    color: dimgray;
+    font-style: oblique;
+  }
+  .seven {
+    border: 1px;
+    border-radius: 30px;
+    border-style: solid;
+    background-color: black;
+  }
+  .seven p {
+    margin: 10px;
+    margin-left: 20px;
+    font-size: 15px;
+    text-align: left;
+  }
+  .seven p span {
+    color: rgb(44, 243, 243);
+  }
+  #article9 li {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: oblique;
+    color: dimgray;
+  }
+  #article9 li b {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+  }
+
+  #articleten {
+    text-align: center;
+    margin-top: 20px;
+  }
+  #articleten h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-style: oblique;
+  }
+  #articleten p {
+    font-size: 15px;
+    font-weight: bolder;
+    color: dimgray;
+    font-style: oblique;
+  }
+  #articleten ol li {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bolder;
+    font-style: oblique;
+    text-align: left;
+  }
+  #articleten ol li b {
+    color: white;
+  }
+
+  .eight {
+    border: 1px;
+    border-radius: 30px;
+    border-style: solid;
+    background-color: black;
+    margin-top: 15px;
+  }
+  .eight p {
+    margin: 10px;
+    margin-left: 30px;
+    font-size: 15px;
+  }
+  .eight p span {
+    color: rgb(44, 243, 243);
+  }
+
+  .nine {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .nine h4 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-style: oblique;
+  }
+  .nine p {
+    font-size: 15px;
+    font-weight: bolder;
+    font-style: oblique;
+  }
 }
