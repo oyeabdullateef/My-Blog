@@ -217,9 +217,9 @@
 @media only screen and (max-width: 480px) {
   .body {
     padding-top: 20px;
-    padding-right: 20px;
+    padding-right: 10px;
     padding-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
     color: white;
     background-color: black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -327,8 +327,7 @@
     text-transform: capitalize;
   }
   #div2 img {
-    width: 300px;
-    margin-right: 50px;
+    width: 250px;
   }
 
   #div6 {
