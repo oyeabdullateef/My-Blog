@@ -97,10 +97,6 @@
     flex-direction: row;
     gap: 20px;
   }
-  #div4 h2 {
-    color: green;
-    text-transform: capitalize;
-  }
 
   #div2 ul li a {
     border: 1px;
@@ -171,6 +167,8 @@
   #div4 h2 {
     font-size: 35px;
     font-weight: 700;
+    color: green;
+    text-transform: capitalize;
   }
   #div6 {
     display: flex;
