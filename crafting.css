@@ -159,6 +159,7 @@
   #div5 img {
     width: 300px;
     height: 150px;
+    border-radius: 20px;
   }
   #div4 {
     display: flex;
@@ -208,6 +209,7 @@
   }
   #article #image1 {
     margin-bottom: 30px;
+    border-radius: 20px;
   }
   #article p {
     margin-top: 10px;
@@ -245,6 +247,7 @@
     width: 750px;
     height: 300px;
     margin-bottom: 30px;
+    border-radius: 20px;
   }
   #article1 p {
     margin-top: 10px;
@@ -830,6 +833,7 @@
   #div5 img {
     width: 300px;
     height: 150px;
+    border-radius: 20px;
   }
   #div6 {
     display: flex;
@@ -872,6 +876,7 @@
   }
   #article #image1 {
     margin-bottom: 30px;
+    border-radius: 20px;
   }
   #article p {
     margin-top: 10px;
@@ -907,7 +912,7 @@
     width: 350px;
     height: 200px;
     margin-bottom: 30px;
-    margin-left: 10px;
+    border-radius: 20px;
   }
   #article1 p {
     margin-top: 10px;
