@@ -1,0 +1,212 @@
+@media only screen and (min-width: 481px) and (max-width: 1366px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: black;
+    color: white;
+  }
+  .body {
+    padding-top: 40px;
+    padding-right: 100px;
+    padding-bottom: 40px;
+    padding-left: 100px;
+    background-color: black;
+    color: white;
+  }
+  .main {
+    height: 100%;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serifs;
+  }
+  .div {
+    margin-top: 50px;
+    border: 1px;
+    border-style: solid;
+    padding: 20px;
+    border-right-color: black;
+    border-top-color: black;
+    border-bottom-color: black;
+    border-radius: 10px;
+  }
+  .div p {
+    width: 350px;
+  }
+  .image-container {
+    border: 1px;
+    border-style: solid;
+    padding: 25px;
+    border-radius: 10px;
+    position: relative;
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .icon-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .icon {
+    font-size: 24px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .icon:hover {
+    transform: scale(1.1);
+  }
+
+  .download-icon:hover {
+    color: #4caf50; /* Green color for download */
+  }
+  .download-i:hover {
+    color: #4caf50; /* Green color for download */
+  }
+
+  .liked {
+    color: #ff5252;
+  }
+  .like {
+    color: #ff5252;
+  }
+  .div1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 90px;
+  }
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .p {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .body {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    color: white;
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+  .div {
+    margin-top: 50px;
+    border: 1px;
+    border-style: solid;
+    padding: 20px;
+    border-right-color: black;
+    border-top-color: black;
+    border-bottom-color: black;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  .div p {
+    width: auto;
+  }
+
+  .image-container {
+    border: 1px;
+    border-style: solid;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    position: relative;
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .icon-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .icon {
+    font-size: 24px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .icon:hover {
+    transform: scale(1.1);
+  }
+
+  .download-icon:hover {
+    color: #4caf50; /* Green color for download */
+  }
+  .download-i:hover {
+    color: #4caf50; /* Green color for download */
+  }
+
+  .liked {
+    color: #ff5252;
+  }
+  .like {
+    color: #ff5252;
+  }
+  .div1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 50px;
+  }
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .p {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+}
